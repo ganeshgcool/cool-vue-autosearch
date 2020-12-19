@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Cool-Vue-Autosearch</title>
+  </head>
+  <body>
+      <div class="container" style="padding-top:50px;">
+        <coolvueautosearch :optiondata="states" :selectedstate.sync="selectedstate"></coolvueautosearch>
+        <!-- <coolvueautosearch :optiondata="states" :selectedstate.sync="selectedstate" @getstatecode="setstatecode"></coolvueautosearch> 
+          this line is for emitting event
+          add setstate function in parent component and set set selected value to your variable ie. selectedstatevalue 
+        -->
+      </div>
+    <script src="dist/build.js"></script>
+  </body>
+</html>
